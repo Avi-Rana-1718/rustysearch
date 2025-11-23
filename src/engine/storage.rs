@@ -5,6 +5,11 @@ pub struct StorageEngine {
 }
 
 impl StorageEngine {
+
+    pub fn new()-> Self {
+        StorageEngine {  }
+    }
+
     fn insert(document: Document) {
 
     }
