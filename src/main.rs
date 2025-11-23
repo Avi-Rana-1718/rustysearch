@@ -1,5 +1,3 @@
-use std::collections::{HashMap, HashSet};
-
 use crate::engine::DatabaseEngine;
 
 mod engine;
@@ -7,4 +5,7 @@ mod models;
 
 fn main() {
     let db: DatabaseEngine = DatabaseEngine::new();
+    let test = String::from("Hello, world. How are you?");
+    let tokens = db.tokenize(test);
+    println!("{:?}", tokens);
 }
